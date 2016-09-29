@@ -16,14 +16,19 @@ body {
   margin: 0;
   padding: 0;
   font-size: 24px;
+  color: #222;
   position: absolute;
   max-width: 200px;
   font-size: 21px;
-  top: 81px;
-  left: 77px;
+  top: 82px;
+  left: 78px;
   line-height: 0.97em;
   text-indent:-0.8em;
   word-wrap: break-word;
+
+  -ms-transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
+  transform: rotate(1deg);
 }
 
 form {
