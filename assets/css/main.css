@@ -60,6 +60,10 @@ input[type=submit] {
     cursor: pointer;
 }
 
+input:focus {
+  outline: none;
+}
+
 .footer {
   text-align: center;
   text-transform: lowercase;
