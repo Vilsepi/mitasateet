@@ -1,0 +1,63 @@
+@import 'https://fonts.googleapis.com/css?family=Short+Stack';
+
+body {
+  font-family: 'Short Stack', sans-serif;
+  text-transform: uppercase;
+}
+
+.pic-frame {
+  width: 940px;
+  margin: 40px auto;
+  padding: 0;
+  position: relative;
+}
+
+.comment {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  position: absolute;
+  max-width: 200px;
+  font-size: 22px;
+  top: 81px;
+  left: 77px;
+  line-height: 0.97em;
+}
+
+form {
+  margin: 20px auto;
+  padding-left: 12px;
+  font-size: 22px;
+}
+
+input[type=text] {
+    padding: 2px 0;
+    border: none;
+    width: 350px;
+    font-family: 'Short Stack', sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    border-bottom: 1px solid #ddd;
+}
+
+input[type=submit] {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #000;
+    padding: 3px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  text-transform: lowercase;
+  margin: 200px 0 50px 0;
+  color: #ccc;
+}
+
+.footer a {
+  color: #ccc;
+}
