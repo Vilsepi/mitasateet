@@ -1,9 +1,16 @@
 language: node_js
 node_js:
-  - "6"
+  - '4'
 
 install:
   - sudo pip install awscli
 
 script:
-  - aws help
+  - ls -la
+  - pwd
+  - aws s3 sync . s3://mitasateet.heap.fi/ --region eu-west-1 --exclude "*" --include "*.html" --include "assets/*" --dryrun
+
+env:
+  matrix:
+    - secure: AZreHRsAtKAQBQSBiPnac4Z+7pSYNENfcIUaWw2hRUNwPv3gNwKyyPcJMEPnn8k/q4Q1u4LkJvRc4I6S6Y3dJn9oEHMXFWzYjck962U08mc0cSKG59J090vRlWeBAvSLbwAW87PsGaaPUUdoCzb3km3C0d8xu8pacsFcMFblPMvMhQVOVQarAlZg8V1pcOZOos3zJuc8UBuTEJWMX14ZpemyJX0DCPIaQFuaArcAPF2W6862LCcFXN3LyaLDfxELE+85nNHAOrLk9xudyQojxyeg4TYgHDHMonn6M9rMM5H6mmQjE7NsHsE1f/YtZcCDL74IcWZFPU1QLGsCMUUtQPWVrxq1t4xybTu/z856z8NCjmhqtNUrYaa0PdvvCAk6RbmABbMcvpdR61Iixiy2Ucx4yzEsr+i2DqhnmgW8hrn1C+027l/gPzmMSH4kJYKjh7QJWKZnVf53p7xWRuLryzaO4KnCzwRfqfFsCvAH7fmrhkVi1Tb0ZGvfMX2zt7WSK3uunrpmmsnR4FsDckrh68+jwQP7C1xaiwigVmZWYCIVwY9MTUUmcWnw2hWFD+wC/G7K9JkR2SBIo0jwiMmZ1xPijVSw+I1Vyo6P75+B6iwN3SAfabP6NWaymH8gr7DD8lAxL1jQ8nn8NBP/mmbiBkMzctaJW8SoWvCz3wLjKmk=
+    - secure: pKkWoEB/KEj6EnC8W2vQIffDNq39nCGBPeQvENah3BfmuD/yrjC/6RNEvxF3CqOcWLDWfDF0itO/lJ+7sKG+uBI5z6kTweziTD+pFW8eoI2YKY99q+6OOELjylrxtugeFa8b0AgRebeXNSftfp04a0xeLO1lNQY1pJTmpeLQSnwsX4Ivd+UhSRp1TaJVb6q8TSluQ3pJsDj7T7CBewrWg9QTdke19Ysn+at2Gbu9zfCqwqAf0m8SBVBGj7H9PpEigBy4oYQ54xjMvaA3SjA3bJChRuznbEYWZPKeCPcq8G0EEMGYEHOVMql5S5PRq+kIlMKCXdR+KwwyRYpf6JvQQaaaWzD7/6FqT4Fw8P8zx5/gnC4Z+5Gj4dnu1QKRQagksmM+jkEOsYvesjzdXC5OgG3jAANQjXlXQk+AeDQvSPUL4aY+RkYlNWOrh28M+IvD2/EWebibS0leAIgDc1tpa9mBNr5NNxUi5aBDyxhEpGHQnoSi1D4SZjEjxlas5Zk+wnweyfPQFwRfpiEdbiLMlXaPdvA3aiJDDmOX5suLp6z/AznT9gNzx9ydFZ8Sr0Titg2xj0+/sW5DMUVOBzTTQ/ACjriNZdMyETGKGd/+GySg2TrDQxdywb1T6/QL2NQudmlGzfXSuHJNtFXvb/bveBou232H5iHHroultIjO44c=
