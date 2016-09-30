@@ -11,4 +11,4 @@ function getParameterByName(name, url) {
 
 var comment = getParameterByName('q');
 
-document.getElementById("comment").innerHTML=comment;
+document.getElementById("comment").appendChild(document.createTextNode(comment));
