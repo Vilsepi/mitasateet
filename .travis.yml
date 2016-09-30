@@ -6,9 +6,7 @@ install:
   - sudo pip install awscli
 
 script:
-  - ls -la
-  - pwd
-  - aws s3 sync . s3://mitasateet.heap.fi/ --region eu-west-1 --exclude "*" --include "*.html" --include "assets/*" --dryrun
+  - aws s3 sync . s3://mitasateet.heap.fi/ --region eu-west-1 --exclude "*" --include "*.html" --include "assets/*"
 
 env:
   global:
