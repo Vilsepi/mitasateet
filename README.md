@@ -1,6 +1,8 @@
 
 # [Mitä sä teet?](http://mitasateet.heap.fi/)
 
+[![Build Status](https://travis-ci.org/Vilsepi/mitasateet.svg?branch=master)](https://travis-ci.org/Vilsepi/mitasateet)
+
 Comic strip generator.
 
 ## Roadmap
