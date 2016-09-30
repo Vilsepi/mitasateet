@@ -10,5 +10,6 @@ function getParameterByName(name, url) {
 }
 
 var comment = getParameterByName('q');
-
-document.getElementById("comment").appendChild(document.createTextNode(comment));
+if(comment) {
+    document.getElementById("comment").appendChild(document.createTextNode(comment));
+}
