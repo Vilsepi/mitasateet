@@ -41,7 +41,9 @@ form {
   font-size: 22px;
   padding: 2px 0 0 192px;
   margin: 0;
+  display: block;
   color: #ddd;
+  text-decoration: none;
 }
 
 input[type=text] {
