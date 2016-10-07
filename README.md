@@ -9,6 +9,8 @@ Comic strip generator. Because sometimes, it's good to reflect on what the fuck 
 
 Open an issue, send a pull request or request for push access.
 
+Please do not add billions of tools. If you have more tool configuration than actual code, you should GTFO. Keep things minimal and get shit done.
+
 [Task board](https://github.com/Vilsepi/mitasateet/projects/1)
 
 ## Credits and License
