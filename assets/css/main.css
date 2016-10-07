@@ -11,6 +11,11 @@ body {
   padding: 0;
 }
 
+.clearfix {
+  clear: both;
+  display: block;
+}
+
 .col {
   display: block;
   float: left;
@@ -54,7 +59,7 @@ body {
 }
 
 form {
-  margin: 200px auto 30px auto;
+  margin: 50px auto 30px auto;
   padding-left: 12px;
   font-size: 22px;
 }
