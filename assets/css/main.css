@@ -35,7 +35,7 @@ body {
     margin: 0 auto;
   }
   .mobile-hide {
-    /*display: none;*/
+    display: none;
   }
 }
 

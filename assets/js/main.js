@@ -33,4 +33,8 @@ if (comment) {
     var text = prepareText(comment);
     el.appendChild(document.createTextNode(text.comment));
     el.style['font-size'] = text.size + 'px';
+
+    document.getElementById("panel2").classList.remove("mobile-hide");
+    document.getElementById("panel3").classList.remove("mobile-hide");
+
 }
