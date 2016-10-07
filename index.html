@@ -14,19 +14,38 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-34074502-6', 'auto');
   ga('send', 'pageview');
-</script>
+  </script>
 </head>
 <body>
 
-<div class="pic-frame">
-  <img src="assets/img/base_wider.png">
-  <p id="comment" class="comment"></p>
+<div class="row">
 
+  <div class="col">
+    <div class="pic-frame">
+      <img src="assets/img/p1.png">
+      <p id="comment" class="comment"></p>
+    </div>
+  </div>
+  <div class="col mobile-hide">
+    <div class="pic-frame">
+      <img src="assets/img/p2.png">
+    </div>
+  </div>
+  <div class="col mobile-hide">
+    <div class="pic-frame">
+      <img src="assets/img/p3.png">
+    </div>
+  </div>
+
+</div>
+<div class="row">
+  
   <form>
     Mitä sä teet?
     <input type="text" name="q">
     <input type="submit" value=">">
   </form>
+  
   <a href="?q=Kirjoitan+Native-SQLää" class="hint">Kirjoitan Native-SQLää</a>
   <a href="?q=Yritän+ladata+lounaskorttia" class="hint">Yritän ladata lounaskorttia</a>
   <a href="?q=Mongon+aggregaatteja" class="hint">Mongon aggregaatteja</a>
@@ -34,6 +53,7 @@
   <a href="?q=Trollaan+VMP-kanavalla" class="hint">Trollaan VMP-kanavalla</a>
   <a href="?q=Tilaan+Soylentia" class="hint">Tilaan Soylentia</a>
   <a href="?q=Luen+Twitteristä+kohuja" class="hint">Luen Twitteristä kohuja</a>
+
 </div>
 
 <div class="footer">

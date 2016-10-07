@@ -5,11 +5,33 @@ body {
   text-transform: uppercase;
 }
 
-.pic-frame {
-  width: 940px;
-  margin: 40px auto;
+.row {
+  max-width: 940px;
+  margin: 0 auto;
   padding: 0;
+}
+
+.col {
+  display: block;
+  float: left;
+}
+
+.pic-frame {
   position: relative;
+}
+
+@media screen and (max-width: 970px){
+  .col {
+    width: 100%;
+  }
+  .pic-frame {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+  }
+  .mobile-hide {
+    /*display: none;*/
+  }
 }
 
 .comment {
@@ -32,7 +54,7 @@ body {
 }
 
 form {
-  margin: 20px auto;
+  margin: 200px auto 30px auto;
   padding-left: 12px;
   font-size: 22px;
 }
