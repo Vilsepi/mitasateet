@@ -25,6 +25,76 @@ body {
   position: relative;
 }
 
+.comment {
+  margin: 0;
+  padding: 0;
+  color: #222;
+  position: absolute;
+  height: 40px;
+  max-width: 197px;
+  font-size: 21px;
+  top: 80px;
+  left: 78px;
+  line-height: 0.97em;
+  text-indent:-0.8em;
+  word-wrap: break-word;
+
+  -ms-transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+
+form {
+  margin: 20px auto 30px auto;
+  padding-left: 12px;
+  font-size: 22px;
+}
+
+.hint {
+  font-size: 22px;
+  margin: 2px 0 0 192px;
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+}
+
+input[type=text] {
+    padding: 2px 0;
+    margin-top: 0px;
+    border: none;
+    max-width: 400px;
+    font-family: 'Short Stack', sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    border-bottom: 1px solid #ddd;
+}
+
+input[type=submit] {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #000;
+    padding: 3px 12px;
+    text-decoration: none;
+    font-size: 22px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+.footer {
+  text-align: center;
+  text-transform: lowercase;
+  margin: 170px 0 20px 0;
+  color: #ccc;
+}
+
+.footer a {
+  color: #ccc;
+}
+
 @media screen and (max-width: 970px){
   .col {
     width: 100%;
@@ -37,74 +107,13 @@ body {
   .mobile-hide {
     display: none;
   }
-}
-
-.comment {
-  margin: 0;
-  padding: 0;
-  color: #222;
-  position: absolute;
-  height: 40px;
-  max-width: 197px;
-  font-size: 21px;
-  top: 82px;
-  left: 78px;
-  line-height: 0.97em;
-  text-indent:-0.8em;
-  word-wrap: break-word;
-
-  -ms-transform: rotate(1deg);
-  -webkit-transform: rotate(1deg);
-  transform: rotate(1deg);
-}
-
-form {
-  margin: 50px auto 30px auto;
-  padding-left: 12px;
-  font-size: 22px;
-}
-
-.hint {
-  font-size: 22px;
-  padding: 2px 0 0 192px;
-  margin: 0;
-  display: block;
-  color: #ddd;
-  text-decoration: none;
-}
-
-input[type=text] {
-    padding: 2px 0;
-    border: none;
-    width: 400px;
-    font-family: 'Short Stack', sans-serif;
-    text-transform: uppercase;
-    font-size: 22px;
-    border-bottom: 1px solid #ddd;
-}
-
-input[type=submit] {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    color: #000;
-    padding: 3px 15px;
-    text-decoration: none;
-    font-size: 22px;
-    margin: 0 2px;
-    cursor: pointer;
-}
-
-input:focus {
-  outline: none;
-}
-
-.footer {
-  text-align: center;
-  text-transform: lowercase;
-  margin: 190px 0 20px 0;
-  color: #ccc;
-}
-
-.footer a {
-  color: #ccc;
+  .hint {
+    margin-left: 12px;
+  }
+  label {
+    display: block;
+  }
+  input {
+    display: block;
+  }
 }
