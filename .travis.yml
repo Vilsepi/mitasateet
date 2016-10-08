@@ -12,5 +12,6 @@ install:
   - sudo pip install awscli
 
 script:
-  - perl -pe 's/<!-- ga_injection_point -->/`cat ga_snippet.html`/e' index.html > index.html
+  - perl -pe 's/<!-- ga_injection_point -->/`cat ga_snippet.html`/e' index.html > index_with_ga.html
+  - mv index_with_ga.html index.html && rm ga_snippet.html
   - aws s3 sync . s3://mitasateet.heap.fi/ --region eu-west-1 --exclude "*" --include "*.html" --include "assets/*"
